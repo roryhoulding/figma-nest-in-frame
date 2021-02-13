@@ -98,12 +98,6 @@ function calcNodeEdges(node: SceneNode) {
 function checkIsInside(nodeA: SceneNode, nodeB: SceneNode) {
   const nodeACenter = calcNodeCenter(nodeA);
   const nodeBEdges = calcNodeEdges(nodeB);
-  console.log('x', nodeACenter.x);
-  console.log('y', nodeACenter.y);
-  console.log('left', nodeBEdges.left);
-  console.log('right', nodeBEdges.right);
-  console.log('top', nodeBEdges.top);
-  console.log('bottom', nodeBEdges.bottom);
 
   if (
     nodeACenter.x >= nodeBEdges.left &&
