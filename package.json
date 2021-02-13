@@ -1,0 +1,14 @@
+{
+  "name": "nest-in-frame",
+  "version": "1.0.0",
+  "description": "Quickly next a frame inside the frame it is sitting on top of.",
+  "main": "code.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "author": "Rory Houlding",
+  "license": "",
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.19.1"
+  }
+}
