@@ -15,7 +15,7 @@ Future features:
 Just learning Typescript so there are some bad things going on (I think)
 */
 function main() {
-    figma.notify('⌘ + ⇧ + F');
+    // figma.notify('⌘ + ⇧ + F', 100);
     if (figma.currentPage.selection.length > 1) {
         figma.closePlugin('Too many nodes selected');
         return;
@@ -30,6 +30,7 @@ function main() {
         figma.closePlugin('No parent node');
         return;
     }
+    
     // Get the siblings of the selected node that are frames
     // Do not include the currently selected node
     const siblingFrames = selectedNode.parent.children.filter((node) => node.type === 'FRAME' && selectedNode.id !== node.id);
