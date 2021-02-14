@@ -14,6 +14,9 @@ Nest in frame will nest the selected object inside any frame that it overlaps wi
 ##### With plugin
 ![alt text](https://lucid-hugle-e411cb.netlify.app/portfolio/nest-in-frame/with-plugin.gif "Demo with plugin")
 
+### Usage
+This is a personal plugin. To use it, download this repo and add to Figma as a development plugin. To set up a custom shortcut, do so in Mac keyboard system preferences.
+
 ### Contraints
 - Only works if one node is selected
 - If the selected object overlaps with multiple frames, it will nest itself inside the first one it finds
