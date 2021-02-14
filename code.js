@@ -15,6 +15,7 @@ Future features:
 Just learning Typescript so there are some bad things going on (I think)
 */
 function main() {
+    figma.notify('⌘ + ⇧ + F');
     if (figma.currentPage.selection.length > 1) {
         figma.closePlugin('Too many nodes selected');
         return;
@@ -78,12 +79,6 @@ function calcNodeEdges(node) {
 function checkIsInside(nodeA, nodeB) {
     const nodeACenter = calcNodeCenter(nodeA);
     const nodeBEdges = calcNodeEdges(nodeB);
-    console.log('x', nodeACenter.x);
-    console.log('y', nodeACenter.y);
-    console.log('left', nodeBEdges.left);
-    console.log('right', nodeBEdges.right);
-    console.log('top', nodeBEdges.top);
-    console.log('bottom', nodeBEdges.bottom);
     if (nodeACenter.x >= nodeBEdges.left &&
         nodeACenter.x <= nodeBEdges.right &&
         nodeACenter.y >= nodeBEdges.top &&

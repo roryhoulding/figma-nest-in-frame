@@ -16,6 +16,8 @@ Just learning Typescript so there are some bad things going on (I think)
 */
 
 function main() {
+  figma.notify('⌘ + ⇧ + F')
+
   if (figma.currentPage.selection.length > 1) {
     figma.closePlugin('Too many nodes selected');
     return;
